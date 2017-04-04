@@ -13,5 +13,5 @@ git clone --branch=${EPICS_DEV_VERSION} https://github.com/lnls-sirius/epics-dev
 
 # Build EPICS
 cd ${EPICS_DEV_REPO}
-./run-all.sh -e yes -x yes -s yes -i -o
+./run-all.sh -e yes -x yes -s yes -i -o -c
 cd ..
