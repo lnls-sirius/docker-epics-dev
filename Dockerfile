@@ -35,7 +35,9 @@ WORKDIR /build
 RUN echo nameserver 10.0.0.71 >> /etc/resolv.conf && \
     /build/setup.sh && \
 # Cleanup
-    rm -rf /var/lib/apt/lists/*
+    rm -rf /var/lib/apt/lists/* && \
+    cd /build/epics-dev && \
+    git clean -fdx
 
 # Change to root directory
 WORKDIR /
