@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+set -u
+set -e
+
 # Source env vars
 . ./env-vars.sh
 
