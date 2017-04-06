@@ -41,3 +41,14 @@ RUN echo nameserver 10.0.0.71 >> /etc/resolv.conf && \
 
 # Change to root directory
 WORKDIR /
+
+# Expose default EPICS v3 ports
+EXPOSE 5064/tcp
+EXPOSE 5064/tcp
+EXPOSE 5065/udp
+EXPOSE 5065/udp
+# Expose default EPICS v4
+EXPOSE 5075/udp
+EXPOSE 5075/udp
+EXPOSE 5076/udp
+EXPOSE 5076/udp
