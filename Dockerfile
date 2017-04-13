@@ -43,12 +43,12 @@ RUN echo nameserver 10.0.0.71 >> /etc/resolv.conf && \
 WORKDIR /
 
 # Expose default EPICS v3 ports
-EXPOSE 5064/tcp
+EXPOSE 5064/udp
 EXPOSE 5064/tcp
 EXPOSE 5065/udp
-EXPOSE 5065/udp
+EXPOSE 5065/tcp
 # Expose default EPICS v4
 EXPOSE 5075/udp
-EXPOSE 5075/udp
+EXPOSE 5075/tcp
 EXPOSE 5076/udp
-EXPOSE 5076/udp
+EXPOSE 5076/tcp
