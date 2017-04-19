@@ -13,6 +13,7 @@ RUN echo nameserver 10.0.0.71 >> /etc/resolv.conf && \
         wget \
         git \
         sudo \
+        net-tools \
     && rm -rf /var/lib/apt/lists/*
 
 # Setup git, only for applying patches
