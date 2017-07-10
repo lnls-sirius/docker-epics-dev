@@ -36,6 +36,7 @@ sed -n "$EPICS_TEMP_REPO/bash.bashrc.local" -e '
     h
 }' > "$EPICS_TEMP_REPO/expected-docker-env-vars.txt"
 
+sed -i -e '/=[$](/d' "$EPICS_TEMP_REPO/expected-docker-env-vars.txt"
 sed -i -e '$ s/ \\/$/' "$EPICS_TEMP_REPO/expected-docker-env-vars.txt"
 
 cat > "$EPICS_TEMP_REPO/check-docker-env-vars.sed" << EOF
