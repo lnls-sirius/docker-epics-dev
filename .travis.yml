@@ -1,0 +1,2 @@
+language: c
+script: ./check-docker-env-vars.sh
